@@ -9,12 +9,13 @@ public class FibonacciNumbers {
 			fibSequence.add(0);
 			fibSequence.add(1);
 			fibSequence.add(2);
-			for (int i=2; i<100; i++) {
+			for (int i=2; i<99; i++) {
 				int newElement = fibSequence.get(i)+fibSequence.get(i-1);
 				fibSequence.add(newElement);
 			}
 		
 		System.out.println(fibSequence);
+		System.out.println("Number of Fibonaccis in this sequece is "+fibSequence.size());
 
 	}
 	
