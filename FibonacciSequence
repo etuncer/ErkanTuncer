@@ -8,7 +8,8 @@ public class FibonacciNumbers {
 			ArrayList<Integer> fibSequence = new ArrayList<Integer>();
 			fibSequence.add(0);
 			fibSequence.add(1);
-			for (int i=1; i<100; i++) {
+			fibSequence.add(2);
+			for (int i=2; i<100; i++) {
 				int newElement = fibSequence.get(i)+fibSequence.get(i-1);
 				fibSequence.add(newElement);
 			}
