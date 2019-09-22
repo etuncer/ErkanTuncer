@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class FibonacciNumbers {
+
+
+	public static void main(String[] args) {
+
+			ArrayList<Integer> fibSequence = new ArrayList<Integer>();
+			fibSequence.add(0);
+			fibSequence.add(1);
+			for (int i=1; i<100; i++) {
+				int newElement = fibSequence.get(i)+fibSequence.get(i-1);
+				fibSequence.add(newElement);
+			}
+		
+		System.out.println(fibSequence);
+
+	}
+	
+	
+}
